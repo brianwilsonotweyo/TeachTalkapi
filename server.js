@@ -4,7 +4,7 @@ import data from "./data.js";
 import Videos from "./dbModel.js";
 
 const app = express();
-const port = 2021;
+const port = process.env.PORT || 2021;
 app.use(express.json());
 app.use((req, res, next) =>{
     res.setHeader('Access-Control-Allow-Origin', '*');
